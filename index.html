@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="default-bg">
 
   <!--
     - #MAIN
@@ -48,7 +48,7 @@
         <div class="info-content">
           <h1 class="name" title="Rayhan Muammar Shidqi">Rayhan Muammar Shidqi</h1>
 
-          <p class="title">Game Developer</p>
+          <p class="title">IT Student of President University</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -74,35 +74,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="riutotakato06@gmail.com" class="contact-link">rayhanshidqi07@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+62895326204046" class="contact-link">+62 895 3262 04046</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">September 02, 2004</time>
+              <a href="https://mail.google.com/mail/u/5/#inbox?compose=new" class="contact-link">rayhanshidqi07@gmail.com</a>
             </div>
 
           </li>
@@ -125,6 +97,25 @@
 
         <div class="separator"></div>
 
+<div class="info-content">
+  <h1 class="name" title="Highlight">Highlight</h1>
+
+  <div class="sidebar-slider">
+    <div class="slider-track">
+      <img src="./assets/images/project-3.jpg" alt="Project 3" class="slide-img" data-scroll-target="portfolio">
+      <img src="./assets/images/project-6.jpg" alt="Project 6" class="slide-img" data-scroll-target="portfolio">
+      <img src="./assets/images/project-9.jpg" alt="Project 9" class="slide-img" data-scroll-target="portfolio">
+    </div>
+
+    <div class="slider-controls">
+      <button id="prev-slide">&#10094;</button>
+      <button id="next-slide">&#10095;</button>
+    </div>
+  </div>
+</div>
+
+        <div class="separator"></div>
+
         <ul class="social-list">
 
           <li class="social-item">
@@ -142,6 +133,12 @@
           <li class="social-item">
             <a href="https://www.instagram.com/raymoeammer_" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/riutotakato" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
@@ -197,7 +194,7 @@
         - #HOME
       -->
 
-      <article class="home  active" data-page="home">
+      <article class="home active" data-page="home">
 
         <header>
           <h2 class="h2 article-title">Home</h2>
@@ -207,39 +204,35 @@
   <!-- Profile Info -->
   <section class="service">
 
-          <h3 class="h3 service-title">Hi , I'm Rayhan Muammar Shidqi</h3>
-
+          <h3 class="h3 service-title" id="hero-typewriter"></h3>
           <ul class="service-list"></ul>
 
         </section>
 
-  <div class="separator"></div>
+        <section class="about-text">
+  <p>
+    Just an IT Student who interested in Game Development and Graphic Designer
+  </p>
+</section>
 
-  <section class="about-text">
-          <p>
-    A college student who passionate in <strong>Game Development</strong> and creative <strong>UI/UX Designer</strong> based in Jakarta, Indonesia.
-  </p>
-  <p>
-    I bring ideas to life through immersive gameplay and intuitive design. Whether it's building compelling game mechanics or designing user-friendly interfaces, I love crafting experiences that leave a lasting impression.
-  </p>
-  <p>
-    Explore my work, get to know my skills, and feel free to connect I'm always open to collaboration and new challenges!
-  </p>
-        </section>
+  <div class="home-contact-btn" style="display: flex; gap: 12px; align-items: center; margin-bottom: 30px;">
+  <button class="btn-contact-me" id="go-to-contact">Contact Me</button>
+</div>
+
+<!-- Audio player tanpa loop -->
+<audio id="bg-music"></audio>
 
         <section class="service">
-
-          <h3 class="h3 service-title">My Role</h3>
 
           <ul class="service-list">
 
             <li class="service-item">
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">UI/UX Designer</h4>
+                <h4 class="h4 service-item-title">Graphic designer</h4>
 
                 <p class="service-item-text">
-                  The most catchy and high-quality design layout made at a intermediate level.
+                  Make some interesting design of layout and UI for game,app and web.
                 </p>
               </div>
 
@@ -248,10 +241,10 @@
             <li class="service-item">
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Game development</h4>
+                <h4 class="h4 service-item-title">Game developer</h4>
 
                 <p class="service-item-text">
-                  Full-stack game development at the intermediate level.
+                  Make a video game and minigames for your company or personal.
                 </p>
               </div>
 
@@ -260,6 +253,25 @@
           </ul>
 
         </section>
+
+        <section class="quote-section">
+  <!-- Kojima -->
+  <p id="typewriter" class="quote"></p>
+  <p class="author" id="kojima-author">— Hideo Kojima (Game Creator of Death Stranding)</p>
+
+  <div style="margin: 50px 0;"></div>
+
+  <!-- Fares -->
+  <p id="fade-quote" class="fade-quote"></p>
+  <p class="author" id="fares-author">— Joseph Fares (Game Creator of It Takes Two)</p>
+
+  <button class="btn-music" id="music-btn" aria-label="Toggle Music">
+    <ion-icon name="musical-notes-outline"></ion-icon>
+  </button>
+  <span class="music-hint" id="music-hint">If you're bored just play some music</span>
+</section>
+
+
 
       </article>
 
@@ -276,13 +288,14 @@
 
         <section class="about-text">
           <p>
-            I'm Game Developer and UI/UX Designer from Jakarta, Indonesia, working in game development and Web Designer.
-            I enjoy the process of making games and turning some website into simple, beautiful and intuitive designs.
-          </p>
+            I’m a Game Developer and Graphic Designer based in Jakarta, Indonesia.
 
-          <p>
-            My job is making and creating a game that your studio or company needed for any game projects.
-            Moreover, I make an UI/UX design for web or mobile applications that is functional and user-friendly but at the same time attractive for your website and apps
+With a strong passion for creating immersive experiences, I enjoy building games from concept to completion. My expertise covers game design, level design, audio direction, and programming. I’m always excited to bring ideas to life through interactivity and storytelling.
+
+As a Graphic Designer, I craft visual assets that enhance branding, UI/UX, and overall aesthetic appeal. I love combining functionality with creativity to deliver design that communicates and connects.
+
+Let’s build something meaningful together — whether it’s a game that entertains or visuals that inspire.
+
           </p>
         </section>
 
@@ -300,9 +313,9 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">President University</h4>
+              <h4 class="h4 timeline-item-title">SMP IT ALBINA Pangkalpinang</h4>
 
-              <span>2023 — Present</span>
+              <span>2016 — 2019</span>
 
               <p class="timeline-text"></p>
 
@@ -313,6 +326,16 @@
               <h4 class="h4 timeline-item-title">SMK LA TANSA Islamic Boarding School</h4>
 
               <span>2020 — 2023</span>
+
+              <p class="timeline-text"></p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">President University</h4>
+
+              <span>2023 - Present</span>
 
               <p class="timeline-text"></p>
 
@@ -336,9 +359,7 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Game development</h4>
-
-              <span>2022 — Present</span>
+              <h4 class="h4 timeline-item-title">Game developer</h4>
 
               <p class="timeline-text"></p>
 
@@ -346,9 +367,15 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">UI/UX Designer</h4>
+              <h4 class="h4 timeline-item-title">Graphic designer</h4>
 
-              <span>2023 — Present</span>
+              <p class="timeline-text"></p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Novel Writer</h4>
 
               <p class="timeline-text"></p>
 
@@ -454,12 +481,12 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Figma (UI/UX Designer)</h5>
+                <h5 class="h5">Figma</h5>
                 <data value="55">Intermediate</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
+                <div class="skill-progress-fill" data-width="55"></div>
               </div>
 
             </li>
@@ -467,38 +494,12 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Framer (UI/UX Designer)</h5>
-                <data value="30">Beginner</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Adobe XD (UI/UX Designer)</h5>
-                <data value="30">Beginner</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Unity Engine (Game Development)</h5>
+                <h5 class="h5">Whimsical</h5>
                 <data value="55">Intermediate</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
+                <div class="skill-progress-fill" data-width="55"></div>
               </div>
 
             </li>
@@ -506,12 +507,51 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">RPG MAKER Engine (Game Development)</h5>
+                <h5 class="h5">Framer</h5>
+                <data value="30">Beginner</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-width="30"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Adobe XD</h5>
+                <data value="30">Beginner</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-width="30"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unity Engine</h5>
+                <data value="55">Intermediate</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-width="55"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">RPG MAKER Engine</h5>
                 <data value="85">Expert</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
+                <div class="skill-progress-fill" data-width="85"></div>
               </div>
 
             </li>
@@ -519,12 +559,12 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Ren'py Visual Novel Engine (Game Development)</h5>
+                <h5 class="h5">Ren'py Visual Novel Engine</h5>
                 <data value="85">Expert</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
+                <div class="skill-progress-fill" data-width="85"></div>
               </div>
 
             </li>
@@ -532,12 +572,12 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Godot Engine (Game Development)</h5>
+                <h5 class="h5">Godot Engine</h5>
                 <data value="30">Beginner</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
+                <div class="skill-progress-fill" data-width="30"></div>
               </div>
 
             </li>
@@ -545,12 +585,12 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Sandbox Engine (Game Development)</h5>
+                <h5 class="h5">Sandbox Engine</h5>
                 <data value="30">Beginner</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
+                <div class="skill-progress-fill" data-width="30"></div>
               </div>
 
             </li>
@@ -558,12 +598,38 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Aseprite (Game Development)</h5>
+                <h5 class="h5">Aseprite</h5>
                 <data value="55">Intermediate</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
+                <div class="skill-progress-fill" data-width="55"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">FL Music Studio</h5>
+                <data value="55">Intermediate</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-width="55"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Presonus Music Studio One</h5>
+                <data value="30">Beginner</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" data-width="30"></div>
               </div>
 
             </li>
@@ -576,7 +642,7 @@
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
+                <div class="skill-progress-fill" data-width="55"></div>
               </div>
 
             </li>
@@ -589,7 +655,7 @@
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
+                <div class="skill-progress-fill" data-width="85"></div>
               </div>
 
             </li>
@@ -612,7 +678,7 @@
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
+                <div class="skill-progress-fill" data-width="85"></div>
               </div>
 
             </li>
@@ -625,7 +691,7 @@
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
+                <div class="skill-progress-fill" data-width="55"></div>
               </div>
 
             </li>
@@ -638,7 +704,7 @@
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
+                <div class="skill-progress-fill" data-width="55"></div>
               </div>
 
             </li>
@@ -651,7 +717,7 @@
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
+                <div class="skill-progress-fill" data-width="85"></div>
               </div>
 
             </li>
@@ -679,7 +745,7 @@
           <ul class="filter-list">
 
             <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
+              <h3 class="h3 skills-title">All Projects</h3>
             </li>
 
           </ul>
@@ -688,7 +754,6 @@
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -700,7 +765,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="UI/UX Designer">
+             <li class="project-item  active" data-filter-item data-category="Graphic Designer">
               <a href="#">
 
                 <figure class="project-img">
@@ -708,17 +773,17 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project-1.jpg" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Blibliobook</h3>
+                <h3 class="project-title">Blibliobook (Ongoing)</h3>
 
-                <p class="project-category">UI/UX Designer</p>
+                <p class="project-category">Graphic Designer</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="UI/UX Designer">
+            <li class="project-item  active" data-filter-item data-category="Graphic Designer">
               <a href="#">
 
                 <figure class="project-img">
@@ -731,136 +796,152 @@
 
                 <h3 class="project-title">Mobile App Store Interface</h3>
 
-                <p class="project-category">UI/UX Designer</p>
+                <p class="project-category">Graphic Designer</p>
 
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="Game Development">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="Game Development">
+  <a href="https://baraaaa.itch.io/raturu-home-fever" target="_blank">
+    <figure class="project-img video-wrapper">
+      
+      <!-- Thumbnail -->
+      <img class="thumbnail" src="./assets/images/project-3.jpg" alt="Raturu Preview" loading="lazy">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+      <!-- Video -->
+      <video class="hover-video" autoplay loop playsinline>
+  <source src="./assets/videos/raturu.mp4" type="video/mp4">
+</video>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
 
-                <h3 class="project-title">RATURU: HOME FEVER</h3>
+    </figure>
 
-                <p class="project-category">Game Development</p>
+    <h3 class="project-title">RATURU: HOME FEVER</h3>
+    <p class="project-category">Game Developer</p>
+  </a>
+</li>
 
-              </a>
-            </li>
+            <li class="project-item active" data-filter-item data-category="Game Development">
+  <a href="#" target="_blank">
+    <figure class="project-img video-wrapper">
+      
+      <!-- Thumbnail -->
+      <img class="thumbnail" src="./assets/images/project-4.jpg" alt="Wanderer Preview" loading="lazy">
 
-            <li class="project-item  active" data-filter-item data-category="Game Development">
-              <a href="#">
+      <!-- Video -->
+      <video class="hover-video" autoplay loop playsinline>
+  <source src="./assets/videos/wanderer.mp4" type="video/mp4">
+</video>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="./assets/images/project-4.jpg" alt="brawlhalla" loading="lazy">
-                </figure>
+    </figure>
 
-                <h3 class="project-title">Wanderer Fantasion</h3>
+    <h3 class="project-title">Wanderer Fantasion (Beta)</h3>
+    <p class="project-category">Game Developer</p>
+  </a>
+</li>
 
-                <p class="project-category">Game Development</p>
 
-              </a>
-            </li>
+            <li class="project-item active" data-filter-item data-category="Game Development">
+  <a href="#" target="_blank">
+    <figure class="project-img video-wrapper">
+      
+      <!-- Thumbnail -->
+      <img class="thumbnail" src="./assets/images/project-5.jpg" alt="Everlasting Preview" loading="lazy">
 
-            <li class="project-item  active" data-filter-item data-category="Game Development">
-              <a href="#">
+      <!-- Video -->
+      <video class="hover-video" autoplay loop playsinline>
+  <source src="./assets/videos/everlasting.mp4" type="video/mp4">
+</video>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
 
-                  <img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy">
-                </figure>
+    </figure>
 
-                <h3 class="project-title">The Everlasting Love</h3>
+    <h3 class="project-title">The Everlasting Love (Beta)</h3>
+    <p class="project-category">Game Developer</p>
+  </a>
+</li>
 
-                <p class="project-category">Game Development</p>
+            <li class="project-item active" data-filter-item data-category="Game Development">
+  <a href="https://github.com/Muhammad-Fiqri/den_kau-japanese-learning-game" target="_blank">
+    <figure class="project-img video-wrapper">
+      
+      <!-- Thumbnail -->
+      <img class="thumbnail" src="./assets/images/project-6.jpg" alt="JLLG Preview" loading="lazy">
 
-              </a>
-            </li>
+      <!-- Video -->
+      <video class="hover-video" autoplay loop playsinline>
+  <source src="./assets/videos/jllg.mp4" type="video/mp4">
+</video>
 
-            <li class="project-item  active" data-filter-item data-category="Game Development">
-              <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+    </figure>
 
-                  <img src="./assets/images/project-6.jpg" alt="metaspark" loading="lazy">
-                </figure>
+    <h3 class="project-title">Japanese Learn Language Game</h3>
+    <p class="project-category">Game Developer</p>
+  </a>
+</li>
 
-                <h3 class="project-title">Japanese Learn Language Game</h3>
 
-                <p class="project-category">Game Development</p>
+            <li class="project-item active" data-filter-item data-category="Game Development">
+  <a href="https://cybergamesedu.my.id" target="_blank">
+    <figure class="project-img video-wrapper">
+      
+      <!-- Thumbnail -->
+      <img class="thumbnail" src="./assets/images/project-7.jpg" alt="Cyber Game Preview" loading="lazy">
 
-              </a>
-            </li>
+      <!-- Video -->
+      <video class="hover-video" autoplay loop playsinline>
+  <source src="./assets/videos/cyber.mp4" type="video/mp4">
+</video>
 
-            <li class="project-item  active" data-filter-item data-category="Game Development">
-              <a href="#">
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+    </figure>
 
-                  <img src="./assets/images/project-7.jpg" alt="summary" loading="lazy">
-                </figure>
+    <h3 class="project-title">Cyber Edu Game</h3>
+    <p class="project-category">Game Developer</p>
+  </a>
+</li>
 
-                <h3 class="project-title">Cyber Edu Game</h3>
+            <li class="project-item active" data-filter-item data-category="Game Development">
+  <a href="https://github.com/riutotakato/Forest-Sprinter" target="_blank">
+    <figure class="project-img video-wrapper">
+      
+      <!-- Thumbnail -->
+      <img class="thumbnail" src="./assets/images/project-8.jpg" alt="Forest Preview" loading="lazy">
 
-                <p class="project-category">Game Development</p>
+      <!-- Video -->
+      <video class="hover-video" autoplay loop playsinline>
+  <source src="./assets/videos/forest.mp4" type="video/mp4">
+</video>
 
-              </a>
-            </li>
 
-            <li class="project-item  active" data-filter-item data-category="Game Development">
-              <a href="#">
+    </figure>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+    <h3 class="project-title">Forest Sprinter</h3>
+    <p class="project-category">Game Developer</p>
+  </a>
+</li>
 
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
+            <li class="project-item active" data-filter-item data-category="Game Development">
+  <a href="https://drive.google.com/drive/folders/1eAV0_4sjVbo0_ZJqQf0wSTG3Ifx2qMxQ" target="_blank">
+    <figure class="project-img video-wrapper">
+      
+      <!-- Thumbnail -->
+      <img class="thumbnail" src="./assets/images/project-9.jpg" alt="Anomaly Preview" loading="lazy">
 
-                <h3 class="project-title">Forest Sprinter</h3>
+      <!-- Video -->
+      <video class="hover-video" autoplay loop playsinline>
+  <source src="./assets/videos/anomaly.mp4" type="video/mp4">
+</video>
 
-                <p class="project-category">Game Development</p>
 
-              </a>
-            </li>
+    </figure>
 
-            <li class="project-item  active" data-filter-item data-category="Game Development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.jpg" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Anomaly Chase</h3>
-
-                <p class="project-category">Game Development</p>
-
-              </a>
-            </li>
+    <h3 class="project-title">Anomaly Chase</h3>
+    <p class="project-category">Game Developer</p>
+  </a>
+</li>
 
           </ul>
 
