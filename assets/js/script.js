@@ -333,14 +333,22 @@ function typeHeroText() {
 window.addEventListener("DOMContentLoaded", () => {
   typeHeroText();
 });
-const audio = document.getElementById('portfolio-audio');
+document.querySelectorAll('.project-item').forEach(item => {
+  const video = item.querySelector('.hover-video');
 
-  function playPortfolioAudio() {
-    audio.currentTime = 0;
-    audio.play();
-  }
+  item.addEventListener('mouseenter', () => {
+    if (video) {
+      video.muted = false;
+      video.currentTime = 0;
+      video.play();
+    }
+  });
 
-  function pausePortfolioAudio() {
-    audio.pause();
-    audio.currentTime = 0;
-  }
+  item.addEventListener('mouseleave', () => {
+    if (video) {
+      video.pause();
+      video.muted = true;
+      video.currentTime = 0;
+    }
+  });
+});
