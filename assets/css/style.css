@@ -2294,7 +2294,7 @@ body.navy-bg .service-item {
 #hero-typewriter::after {
   content: '|';
   animation: blink 1s infinite;
-  color: #FFD700;
+  color: hsl(45, 100%, 72%);
   margin-left: 4px;
 }
 
@@ -2302,5 +2302,19 @@ body.navy-bg .service-item {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+.btn-download-cv {
+  background-color: hsl(45, 100%, 72%);
+  color: rgba(0,0,0,0.7);
+  padding: 10px 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download-cv:hover {
+  background-color: hsl(45, 100%, 72%);
+}
+
 
 

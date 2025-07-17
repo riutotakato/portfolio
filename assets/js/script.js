@@ -268,11 +268,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateSlider();
   });
 
-  // Autoplay
-  let autoplay = setInterval(() => {
-    nextBtn.click();
-  }, 5000);
-
   // Pause saat hover
   const sliderContainer = document.querySelector(".sidebar-slider");
   sliderContainer.addEventListener("mouseenter", () => clearInterval(autoplay));
@@ -338,3 +333,14 @@ function typeHeroText() {
 window.addEventListener("DOMContentLoaded", () => {
   typeHeroText();
 });
+const audio = document.getElementById('portfolio-audio');
+
+  function playPortfolioAudio() {
+    audio.currentTime = 0;
+    audio.play();
+  }
+
+  function pausePortfolioAudio() {
+    audio.pause();
+    audio.currentTime = 0;
+  }
