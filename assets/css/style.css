@@ -2315,6 +2315,45 @@ body.navy-bg .service-item {
 .btn-download-cv:hover {
   background-color: hsl(45, 100%, 72%);
 }
+#profileCard {
+  text-align: center;
+  padding: 16px;
+  max-width: 280px;
+  margin: 32px auto;
+}
+
+#profileCard:hover {
+  transform: scale(1.02); /* sedikit membesar saat di-hover */
+}
+
+#profilePic {
+  display: block;
+  margin: 0 auto 12px auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+#profilePic:hover {
+  transform: scale(1.05);
+}
+
+#profileName {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+  transition: color 0.4s ease;
+}
+
+#profileDesc {
+  font-size: 14px;
+  color: #cccccc;
+  margin-top: 4px;
+  transition: color 0.4s ease;
+}
 
 
 

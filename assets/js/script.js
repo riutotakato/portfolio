@@ -352,3 +352,48 @@ document.querySelectorAll('.project-item').forEach(item => {
     }
   });
 });
+const card = document.getElementById("profileCard");
+const img = document.getElementById("profilePic");
+const name = document.getElementById("profileName");
+const desc = document.getElementById("profileDesc");
+
+let isRiuto = false; // Menandakan apakah tampilan saat ini adalah Riuto
+
+card.addEventListener("mouseenter", () => {
+  // Toggle isi konten saat mouse masuk
+  if (!isRiuto) {
+    // Ganti ke Riuto
+    img.style.opacity = 0.3;
+    name.style.opacity = 0.3;
+    desc.style.opacity = 0.3;
+
+    setTimeout(() => {
+      img.src = "./assets/images/n2.jpg";
+      name.textContent = "Riuto Takato";
+      desc.textContent = "Gamer";
+
+      img.style.opacity = 5;
+      name.style.opacity = 5;
+      desc.style.opacity = 5;
+
+      isRiuto = true;
+    }, 150);
+  } else {
+    // Balik ke Rayhan
+    img.style.opacity = 0.3;
+    name.style.opacity = 0.3;
+    desc.style.opacity = 0.3;
+
+    setTimeout(() => {
+      img.src = "./assets/images/my-avatar.png";
+      name.textContent = "Rayhan Shidqi";
+      desc.textContent = "Game Developer";
+
+      img.style.opacity = 5;
+      name.style.opacity = 5;
+      desc.style.opacity = 5;
+
+      isRiuto = false;
+    }, 150);
+  }
+});
