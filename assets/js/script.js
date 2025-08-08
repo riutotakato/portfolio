@@ -108,7 +108,7 @@ navigationLinks.forEach((link, index) => {
 // === KOJIMA QUOTE TYPEWRITER ===
 const kojimaQuotes = [
   `"Games are not just a pastime. They are a way of telling stories."`,
-  `"I don't want to just create games — I want to create experiences."`
+  `"I don't want to just create games. I want to create experiences."`
 ];
 
 const typewriter = document.getElementById('typewriter');
@@ -223,7 +223,7 @@ musicBtn.addEventListener("click", () => {
     isPlaying = true;
     musicBtn.innerHTML = `<ion-icon name="pause-circle-outline"></ion-icon>`;
     musicBtn.classList.add("music-playing"); // <- tambahkan animasi getar
-    musicHint.textContent = "Enjoy the music!";
+    musicHint.textContent = "Enjoy the music!. I made it myself";
   } else {
     bgMusic.pause();
     isPlaying = false;
