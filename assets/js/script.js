@@ -368,7 +368,7 @@ card.addEventListener("mouseenter", () => {
     desc.style.opacity = 0.3;
 
     setTimeout(() => {
-      img.src = "./assets/images/shiro.jpg";
+      img.src = "./assets/images/nepgear.jpg";
       name.textContent = "Riuto Takato";
       desc.textContent = "Gamer";
 
