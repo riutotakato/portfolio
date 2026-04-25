@@ -223,13 +223,13 @@ musicBtn.addEventListener("click", () => {
     isPlaying = true;
     musicBtn.innerHTML = `<ion-icon name="pause-circle-outline"></ion-icon>`;
     musicBtn.classList.add("music-playing"); // <- tambahkan animasi getar
-    musicHint.textContent = "Enjoy the music!. I made it myself";
+    musicHint.textContent = "Enjoy the music!, I made it myself!";
   } else {
     bgMusic.pause();
     isPlaying = false;
     musicBtn.innerHTML = `<ion-icon name="musical-notes-outline"></ion-icon>`;
     musicBtn.classList.remove("music-playing"); // <- stop animasi
-    musicHint.textContent = "If you're bored just play the music";
+    musicHint.textContent = "click the music button to play music!";
   }
 });
 
