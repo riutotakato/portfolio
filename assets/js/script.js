@@ -385,7 +385,7 @@ card.addEventListener("mouseenter", () => {
     desc.style.opacity = 0.3;
 
     setTimeout(() => {
-      img.src = "./assets/images/my-avatar.png";
+      img.src = "./assets/images/my-avatar.jpeg";
       name.textContent = "Rayhan Shidqi";
       desc.textContent = "Game Developer";
 
